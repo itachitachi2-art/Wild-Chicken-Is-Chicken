@@ -68,6 +68,11 @@ public sealed class ItemActionWCICButcherChicken : ItemAction
         if (ui == null || ui.xui == null || ui.xui.PlayerInventory == null) return;
         if (Time.time - data.lastUseTime < Delay) return;
 
+        // Allocate the presentation and deferred rewards before consuming the
+        // source. The held-item action does not own the decorative timer.
+        var feedback = WCICButcherFeedback.GetOrCreate(manager);
+        var pending = feedback.Prepare(manager, player, slot, replacement, feathers);
+
         data.Busy = true;
         try
         {
@@ -77,15 +82,10 @@ public sealed class ItemActionWCICButcherChicken : ItemAction
             // This makes StopHolding skip DropEntity when SetItem clears the slot.
             heldChicken.OnPlacedAsCatalyst(inventoryData);
             player.SetCVar(".UseAltEntity", 0f);
-            // Replace the occupied toolbelt slot directly: no free bag slot is
-            // needed, no loose live entity is spawned, and no output is duplicated.
-            inventory.SetItem(slot, replacement);
-            // Use the same add/fallback pattern as vanilla ItemActionEat.
-            // AddItem mutates this stack to the remainder after partial insertion.
-            if (!ui.xui.PlayerInventory.AddItem(feathers) && feathers.count > 0)
-            {
-                manager.ItemDropServer(feathers, player.GetPosition(), Vector3.zero, -1, 60f, false);
-            }
+            // Consume exactly once now; both outputs appear only AFTER the
+            // two-second decorative bar and the chicken sound request.
+            inventory.SetItem(slot, ItemStack.Empty.Clone());
+            feedback.Begin(pending);
         }
         finally
         {

@@ -1,5 +1,6 @@
-﻿Wild Chicken Is Chicken v0.1.1
+﻿Wild Chicken Is Chicken v0.1.2
 
-導入: build.cmd → BUILD OK → WildChickenIsChickenをModsへ。
+導入: DLL入りZIPはWildChickenIsChickenをModsへコピー。EACを無効化。
+ソースZIP、または再ビルド: build.cmd → BUILD OK → WildChickenIsChickenをModsへ。
 DLL入り導入用ZIPを作る場合: build-release.cmd。
 詳細と未確認事項はWildChickenIsChicken/README.txtを参照してください。

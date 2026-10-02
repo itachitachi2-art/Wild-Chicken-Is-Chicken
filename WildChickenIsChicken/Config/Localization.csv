@@ -2,3 +2,4 @@ Key,File,Type,UsedInMainMenu,NoTranslate,KeepLoaded,english,Context / Alternate 
 wcicButcheredChicken,items,Item,false,false,,Butchered Chicken,,,,,,絞めたニワトリ,,,,,,,
 wcicButcheredChickenDesc,items,Item,false,false,,"One captured chicken. Slaughtering also yields 23 feathers; any feathers that do not fit in the inventory drop on the ground. Use this chicken in chicken wings, ash chicken stew, or roadrunner chicken jerky. Cannot be raised in a coop.",,,,,,捕獲した一羽を絞めた料理素材。絞めると羽23枚も採取し、インベントリに入らない羽は地面へ落とします。手羽先・アッシュチキンシチュー・ロードランナー・チキンジャーキーに使用できます。鶏小屋には入れられません。,,,,,,,
 wcicWildChickenDesc,items,Item,false,false,,"Catch it. Raise it. Or eat it. Carry to a coop as usual, or press and release secondary action to slaughter. This consumes the chicken.",,,,,,鶏小屋へ抱えて運ぶか、その場で絞めるか選べます。絞めるにはセカンダリアクション（標準設定では右クリック）を押して離してください。鶏一羽を消費します。,,,,,,,
+wcicButchering,ui,Label,false,false,,Butchering...,,,,,,絞めています…,,,,,,,

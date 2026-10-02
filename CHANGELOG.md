@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.2
+
+- Show a non-interactive two-second slaughter progress bar.
+- Request the vanilla chicken death sound before granting the chicken and feathers.
+- Movement and held-item changes do not cancel accepted slaughter.
+- Preserve occupied toolbelt slots; use inventory/ground fallback when needed.
+- Add the game-shipped Unity IMGUI reference to the existing Windows build.
+- New presentation and delayed rewards require in-game verification.
+
 ## 0.1.1
 
 - Add adopted custom transparent 160×160 chicken icon to UIAtlases/ItemIconAtlas and the web ItemIcons folder.
