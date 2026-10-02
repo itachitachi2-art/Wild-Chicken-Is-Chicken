@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configs>
+  <append xpath="/recipes"><recipe name="foodChickenWings" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable,grill">
+	<ingredient name="wcicButcheredChicken" count="1"/>
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="foodHoney" count="1"/>
+</recipe>
+
+<recipe name="foodAshChickenStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable,cookingPotFood">
+	<ingredient name="wcicButcheredChicken" count="1"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="foodCropCorn" count="3"/>
+	<ingredient name="resourceCoal" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+</recipe>
+
+<recipe name="foodRoadrunnerChickenJerky" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable,grill">
+	<ingredient name="wcicButcheredChicken" count="1"/>
+	<ingredient name="foodCropYuccaFruit" count="2"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="1"/>
+	<ingredient name="drinkJarBeer" count="1"/>
+</recipe>
+
+</append>
+</configs>

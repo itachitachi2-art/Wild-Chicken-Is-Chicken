@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configs>
+  <append xpath="/items/item[@name='wildChicken']">
+    <property class="Action1">
+      <property name="Class" value="WCICButcherChicken, WildChickenIsChicken"/>
+      <property name="Delay" value="0.5"/>
+      <property name="UseAnimation" value="false"/>
+    </property>
+    <property name="DescriptionKey" value="wcicWildChickenDesc"/>
+  </append>
+  <append xpath="/items">
+    <item name="wcicButcheredChicken">
+      <property name="CreativeMode" value="Player"/>
+      <property name="HoldType" value="31"/>
+      <property name="CustomIcon" value="wcicButcheredChicken"/>
+      <property name="Meshfile" value="@:Other/Items/Misc/raw_meatPrefab.prefab"/>
+      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="MfoodRawMeat"/>
+      <property name="Stacknumber" value="1"/>
+      <property name="Weight" value="14"/>
+      <property name="EconomicValue" value="0"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="Group" value="Resources"/>
+      <property name="Tags" value="wcicButcheredChicken"/>
+      <property name="DescriptionKey" value="wcicButcheredChickenDesc"/>
+      <property name="NoScrapping" value="true"/>
+    </item>
+  </append>
+</configs>

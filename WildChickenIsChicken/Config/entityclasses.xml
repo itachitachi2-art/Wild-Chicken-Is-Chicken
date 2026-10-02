@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configs>
+  <set xpath="/entity_classes/entity_class[@name='animalChicken']/property[@name='MoveSpeedPanic']/@value">1.2</set>
+</configs>
