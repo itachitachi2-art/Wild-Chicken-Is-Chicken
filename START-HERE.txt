@@ -1,6 +1,10 @@
-﻿Wild Chicken Is Chicken v0.1.2
+Wild Chicken Is Chicken v0.1.3-test1 / 7DTD v3.3 検査版
 
-導入: DLL入りZIPはWildChickenIsChickenをModsへコピー。EACを無効化。
-ソースZIP、または再ビルド: build.cmd → BUILD OK → WildChickenIsChickenをModsへ。
-DLL入り導入用ZIPを作る場合: build-release.cmd。
-詳細と未確認事項はWildChickenIsChicken/README.txtを参照してください。
+ゲーム内動作は未確認です。公開リリースではありません。
+1. ゲームを終了し、セーブと既存MODをバックアップ。
+2. このZIP内のWildChickenIsChickenフォルダで旧版を置き換える。旧DLLを混在させない。
+3. v3.3・EAC無効で起動し、ログの v0.1.3-test1 を確認。
+4. まず検査用セーブで、捕獲・運搬・絞める操作・バー・音・報酬・鶏小屋を確認。
+
+このZIPにはビルド済みDLLが含まれています。通常の導入では再ビルド不要です。
+詳細はWildChickenIsChicken/README.txt と VALIDATION.md を参照。

@@ -1,0 +1,866 @@
+{
+  "status": "PASS",
+  "scope": "All MemberRef rows whose named root type resolves to Assembly-CSharp, including generic TypeSpec parents; exact member kind, canonical nested type names, and decoded signature comparison against supplied game metadata. Static CIL inspection only; no runtime game test.",
+  "member_refs_total": 92,
+  "game_member_refs_checked": 40,
+  "mismatches": 0,
+  "stale_critical_field_refs": 0,
+  "method_bodies_scanned": 21,
+  "scan_errors": [],
+  "unclassified_member_refs": [],
+  "game_identity": {
+    "path": "user-supplied-game/Assembly-CSharp.dll",
+    "sha256": "fceec27300ffd3a1f97b097e43b60f3b07597f441e7ecbc6e1b59eebb234c705",
+    "runtime": "v4.0.30319",
+    "assembly": "Assembly-CSharp",
+    "version": "0.0.0.0",
+    "mvid": "1a9a4203-3d95-4c90-b094-8926dec1ee9c"
+  },
+  "mod_identity": {
+    "path": "WildChickenIsChicken/WildChickenIsChicken.dll",
+    "sha256": "4f4016c9c158900a6189a245c197e0bdf7ae1746245413c4736e06f758f08061",
+    "runtime": "v4.0.30319",
+    "assembly": "WildChickenIsChicken",
+    "version": "0.1.3.0",
+    "mvid": "34c3f049-8a33-4da1-9b3e-b409637b0202"
+  },
+  "holdingEntity_game_fields": [],
+  "holdingEntity_game_properties": [
+    {
+      "token": "0x170004e6",
+      "name": "holdingEntity",
+      "flags": "0x0",
+      "signature": "instance EntityAlive ()"
+    }
+  ],
+  "holdingEntity_game_accessors": [
+    {
+      "token": "0x6002d9f",
+      "rva": "0x12342e",
+      "name": "get_holdingEntity",
+      "flags": "0x886",
+      "signature": "instance EntityAlive ()"
+    }
+  ],
+  "critical_getter_calls": [
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0x42",
+      "opcode": "callvirt",
+      "target": "ItemInventoryData.get_holdingEntity",
+      "target_token": "0xa000004"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0xad",
+      "opcode": "callvirt",
+      "target": "ItemInventoryData.get_slotIdx",
+      "target_token": "0xa00000d"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0xc6",
+      "opcode": "callvirt",
+      "target": "ItemInventoryData.get_itemStack",
+      "target_token": "0xa00000f"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0xd7",
+      "opcode": "callvirt",
+      "target": "ItemStack.get_count",
+      "target_token": "0xa000010"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0xe5",
+      "opcode": "callvirt",
+      "target": "ItemStack.get_itemValue",
+      "target_token": "0xa000011"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0xea",
+      "opcode": "callvirt",
+      "target": "ItemValue.get_ItemClass",
+      "target_token": "0xa000012"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0x12a",
+      "opcode": "callvirt",
+      "target": "ItemValue.get_type",
+      "target_token": "0xa000016"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0x136",
+      "opcode": "callvirt",
+      "target": "ItemValue.get_ItemClass",
+      "target_token": "0xa000012"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0x161",
+      "opcode": "callvirt",
+      "target": "ItemValue.get_type",
+      "target_token": "0xa000016"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0x16d",
+      "opcode": "callvirt",
+      "target": "ItemValue.get_ItemClass",
+      "target_token": "0xa000012"
+    },
+    {
+      "caller": "ItemActionWCICButcherChicken.ExecuteAction",
+      "caller_token": "0x6000004",
+      "offset": "0x21b",
+      "opcode": "call",
+      "target": "ItemStack.get_Empty",
+      "target_token": "0xa000020"
+    },
+    {
+      "caller": "WCICButcherFeedback.AddOrDrop",
+      "caller_token": "0x600000d",
+      "offset": "0x1",
+      "opcode": "callvirt",
+      "target": "ItemStack.get_count",
+      "target_token": "0xa000010"
+    },
+    {
+      "caller": "WCICButcherFeedback.AddOrDrop",
+      "caller_token": "0x600000d",
+      "offset": "0x24",
+      "opcode": "callvirt",
+      "target": "ItemStack.get_count",
+      "target_token": "0xa000010"
+    }
+  ],
+  "game_member_references": [
+    {
+      "token": "0xa000001",
+      "parent": "ItemActionData",
+      "lookup_type": "ItemActionData",
+      "name": ".ctor",
+      "signature": "instance void (ItemInventoryData, int32)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002faa",
+          "rva": "0x130388",
+          "name": ".ctor",
+          "flags": "0x1886",
+          "signature": "instance void (ItemInventoryData, int32)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000002",
+      "parent": "ItemAction",
+      "lookup_type": "ItemAction",
+      "name": "StopHolding",
+      "signature": "instance void (ItemActionData)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002eef",
+          "rva": "0x128f27",
+          "name": "StopHolding",
+          "flags": "0x1c6",
+          "signature": "instance void (ItemActionData)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000003",
+      "parent": "ItemActionData",
+      "lookup_type": "ItemActionData",
+      "name": "invData",
+      "signature": "ItemInventoryData",
+      "kind": "field",
+      "matches": [
+        {
+          "token": "0x40024bf",
+          "name": "invData",
+          "flags": "0x6",
+          "signature": "ItemInventoryData"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000004",
+      "parent": "ItemInventoryData",
+      "lookup_type": "ItemInventoryData",
+      "name": "get_holdingEntity",
+      "signature": "instance EntityAlive ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002d9f",
+          "rva": "0x12342e",
+          "name": "get_holdingEntity",
+          "flags": "0x886",
+          "signature": "instance EntityAlive ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000006",
+      "parent": "Entity",
+      "lookup_type": "Entity",
+      "name": "IsDead",
+      "signature": "instance bool ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6001ee8",
+          "rva": "0xbc79e",
+          "name": "IsDead",
+          "flags": "0x1c6",
+          "signature": "instance bool ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000007",
+      "parent": "GameManager",
+      "lookup_type": "GameManager",
+      "name": "Instance",
+      "signature": "GameManager",
+      "kind": "field",
+      "matches": [
+        {
+          "token": "0x4006b99",
+          "name": "Instance",
+          "flags": "0x16",
+          "signature": "GameManager"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000008",
+      "parent": "GameManager",
+      "lookup_type": "GameManager",
+      "name": "get_World",
+      "signature": "instance World ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x600913c",
+          "rva": "0x36c6bd",
+          "name": "get_World",
+          "flags": "0x886",
+          "signature": "instance World ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000009",
+      "parent": "WorldBase",
+      "lookup_type": "WorldBase",
+      "name": "GetPrimaryPlayer",
+      "signature": "instance EntityPlayerLocal ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6005d7b",
+          "rva": "0x0",
+          "name": "GetPrimaryPlayer",
+          "flags": "0x5c6",
+          "signature": "instance EntityPlayerLocal ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00000b",
+      "parent": "EntityAlive",
+      "lookup_type": "EntityAlive",
+      "name": "inventory",
+      "signature": "Inventory",
+      "kind": "field",
+      "matches": [
+        {
+          "token": "0x4001876",
+          "name": "inventory",
+          "flags": "0x6",
+          "signature": "Inventory"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00000c",
+      "parent": "Inventory",
+      "lookup_type": "Inventory",
+      "name": "get_holdingItemIdx",
+      "signature": "instance int32 ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002d5b",
+          "rva": "0x122721",
+          "name": "get_holdingItemIdx",
+          "flags": "0x886",
+          "signature": "instance int32 ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00000d",
+      "parent": "ItemInventoryData",
+      "lookup_type": "ItemInventoryData",
+      "name": "get_slotIdx",
+      "signature": "instance int32 ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002da0",
+          "rva": "0x123436",
+          "name": "get_slotIdx",
+          "flags": "0x886",
+          "signature": "instance int32 ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00000e",
+      "parent": "Inventory",
+      "lookup_type": "Inventory",
+      "name": "GetItem",
+      "signature": "instance ItemStack (int32)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002d92",
+          "rva": "0x1229ec",
+          "name": "GetItem",
+          "flags": "0x86",
+          "signature": "instance ItemStack (int32)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00000f",
+      "parent": "ItemInventoryData",
+      "lookup_type": "ItemInventoryData",
+      "name": "get_itemStack",
+      "signature": "instance ItemStack ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002da1",
+          "rva": "0x12343e",
+          "name": "get_itemStack",
+          "flags": "0x886",
+          "signature": "instance ItemStack ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000010",
+      "parent": "ItemStack",
+      "lookup_type": "ItemStack",
+      "name": "get_count",
+      "signature": "instance int32 ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002dbf",
+          "rva": "0x123b05",
+          "name": "get_count",
+          "flags": "0x886",
+          "signature": "instance int32 ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000011",
+      "parent": "ItemStack",
+      "lookup_type": "ItemStack",
+      "name": "get_itemValue",
+      "signature": "instance ItemValue ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002dbd",
+          "rva": "0x123ac0",
+          "name": "get_itemValue",
+          "flags": "0x886",
+          "signature": "instance ItemValue ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000012",
+      "parent": "ItemValue",
+      "lookup_type": "ItemValue",
+      "name": "get_ItemClass",
+      "signature": "instance ItemClass ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002e51",
+          "rva": "0x1256c0",
+          "name": "get_ItemClass",
+          "flags": "0x886",
+          "signature": "instance ItemClass ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000013",
+      "parent": "ItemClass",
+      "lookup_type": "ItemClass",
+      "name": "GetItemName",
+      "signature": "instance string ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x60031a4",
+          "rva": "0x142d8a",
+          "name": "GetItemName",
+          "flags": "0x1c6",
+          "signature": "instance string ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000015",
+      "parent": "ItemClass",
+      "lookup_type": "ItemClass",
+      "name": "GetItem",
+      "signature": "static ItemValue (string, bool)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6003195",
+          "rva": "0x142748",
+          "name": "GetItem",
+          "flags": "0x96",
+          "signature": "static ItemValue (string, bool)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000016",
+      "parent": "ItemValue",
+      "lookup_type": "ItemValue",
+      "name": "get_type",
+      "signature": "instance int32 ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002e1c",
+          "rva": "0x125027",
+          "name": "get_type",
+          "flags": "0x886",
+          "signature": "instance int32 ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000017",
+      "parent": "ItemStack",
+      "lookup_type": "ItemStack",
+      "name": ".ctor",
+      "signature": "instance void (ItemValue, int32)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002dc5",
+          "rva": "0x123b77",
+          "name": ".ctor",
+          "flags": "0x1886",
+          "signature": "instance void (ItemValue, int32)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000018",
+      "parent": "LocalPlayerUI",
+      "lookup_type": "LocalPlayerUI",
+      "name": "GetUIForPlayer",
+      "signature": "static LocalPlayerUI (EntityPlayerLocal)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6003302",
+          "rva": "0x14a998",
+          "name": "GetUIForPlayer",
+          "flags": "0x96",
+          "signature": "static LocalPlayerUI (EntityPlayerLocal)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000019",
+      "parent": "LocalPlayerUI",
+      "lookup_type": "LocalPlayerUI",
+      "name": "get_xui",
+      "signature": "instance XUi ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6003318",
+          "rva": "0x14ae93",
+          "name": "get_xui",
+          "flags": "0x886",
+          "signature": "instance XUi ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00001a",
+      "parent": "XUi",
+      "lookup_type": "XUi",
+      "name": "PlayerInventory",
+      "signature": "XUiM_PlayerInventory",
+      "kind": "field",
+      "matches": [
+        {
+          "token": "0x40068f8",
+          "name": "PlayerInventory",
+          "flags": "0x6",
+          "signature": "XUiM_PlayerInventory"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00001c",
+      "parent": "ItemActionData",
+      "lookup_type": "ItemActionData",
+      "name": "lastUseTime",
+      "signature": "float32",
+      "kind": "field",
+      "matches": [
+        {
+          "token": "0x40024c0",
+          "name": "lastUseTime",
+          "flags": "0x6",
+          "signature": "float32"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00001d",
+      "parent": "ItemAction",
+      "lookup_type": "ItemAction",
+      "name": "Delay",
+      "signature": "float32",
+      "kind": "field",
+      "matches": [
+        {
+          "token": "0x400240c",
+          "name": "Delay",
+          "flags": "0x6",
+          "signature": "float32"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00001e",
+      "parent": "ItemClass",
+      "lookup_type": "ItemClass",
+      "name": "OnPlacedAsCatalyst",
+      "signature": "instance void (ItemInventoryData)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x60031b9",
+          "rva": "0x27fc",
+          "name": "OnPlacedAsCatalyst",
+          "flags": "0x1c6",
+          "signature": "instance void (ItemInventoryData)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00001f",
+      "parent": "EntityAlive",
+      "lookup_type": "EntityAlive",
+      "name": "SetCVar",
+      "signature": "instance void (string, float32)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002397",
+          "rva": "0xd8a06",
+          "name": "SetCVar",
+          "flags": "0x86",
+          "signature": "instance void (string, float32)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000020",
+      "parent": "ItemStack",
+      "lookup_type": "ItemStack",
+      "name": "get_Empty",
+      "signature": "static ItemStack ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002dbc",
+          "rva": "0x123ab3",
+          "name": "get_Empty",
+          "flags": "0x896",
+          "signature": "static ItemStack ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000021",
+      "parent": "ItemStack",
+      "lookup_type": "ItemStack",
+      "name": "Clone",
+      "signature": "instance ItemStack ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002dc6",
+          "rva": "0x123b94",
+          "name": "Clone",
+          "flags": "0x86",
+          "signature": "instance ItemStack ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000022",
+      "parent": "Inventory",
+      "lookup_type": "Inventory",
+      "name": "SetItem",
+      "signature": "instance void (int32, ItemStack)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002d8f",
+          "rva": "0x12301e",
+          "name": "SetItem",
+          "flags": "0x86",
+          "signature": "instance void (int32, ItemStack)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000023",
+      "parent": "ItemAction",
+      "lookup_type": "ItemAction",
+      "name": ".ctor",
+      "signature": "instance void ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002f1f",
+          "rva": "0x12961a",
+          "name": ".ctor",
+          "flags": "0x1886",
+          "signature": "instance void ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000030",
+      "parent": "Audio.Manager",
+      "lookup_type": "Audio.Manager",
+      "name": "Play",
+      "signature": "static Audio.Handle (Entity, string, float32, bool)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x600d1c2",
+          "rva": "0x4c500c",
+          "name": "Play",
+          "flags": "0x96",
+          "signature": "static Audio.Handle (Entity, string, float32, bool)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000034",
+      "parent": "ItemStack",
+      "lookup_type": "ItemStack",
+      "name": "IsEmpty",
+      "signature": "instance bool ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6002dc8",
+          "rva": "0x123bf3",
+          "name": "IsEmpty",
+          "flags": "0x86",
+          "signature": "instance bool ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000035",
+      "parent": "XUiM_PlayerInventory",
+      "lookup_type": "XUiM_PlayerInventory",
+      "name": "AddItem",
+      "signature": "instance bool (ItemStack)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6008bd0",
+          "rva": "0x355c16",
+          "name": "AddItem",
+          "flags": "0x1e6",
+          "signature": "instance bool (ItemStack)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000036",
+      "parent": "Entity",
+      "lookup_type": "Entity",
+      "name": "GetPosition",
+      "signature": "instance UnityEngine.Vector3 ()",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6001f08",
+          "rva": "0xbd2b9",
+          "name": "GetPosition",
+          "flags": "0x86",
+          "signature": "instance UnityEngine.Vector3 ()"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000038",
+      "parent": "GameManager",
+      "lookup_type": "GameManager",
+      "name": "ItemDropServer",
+      "signature": "instance void (ItemStack, UnityEngine.Vector3, UnityEngine.Vector3, int32, float32, bool)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x6009162",
+          "rva": "0x36e0a4",
+          "name": "ItemDropServer",
+          "flags": "0x1e6",
+          "signature": "instance void (ItemStack, UnityEngine.Vector3, UnityEngine.Vector3, int32, float32, bool)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa00004e",
+      "parent": "Localization",
+      "lookup_type": "Localization",
+      "name": "Get",
+      "signature": "static string (string, bool, string)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x60096b3",
+          "rva": "0x38d8e4",
+          "name": "Get",
+          "flags": "0x96",
+          "signature": "static string (string, bool, string)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000056",
+      "parent": "ModEvents",
+      "lookup_type": "ModEvents",
+      "name": "WorldShuttingDown",
+      "signature": "ModEvents+ModEvent`1<ModEvents+SWorldShuttingDownData>",
+      "kind": "field",
+      "matches": [
+        {
+          "token": "0x4002d5e",
+          "name": "WorldShuttingDown",
+          "flags": "0x36",
+          "signature": "ModEvents+ModEvent`1<ModEvents+SWorldShuttingDownData>"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000057",
+      "parent": "ModEvents+ModEventHandlerDelegate`1<ModEvents+SWorldShuttingDownData>",
+      "lookup_type": "ModEvents+ModEventHandlerDelegate`1",
+      "name": ".ctor",
+      "signature": "instance void (object, native int)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x60037c8",
+          "rva": "0x0",
+          "name": ".ctor",
+          "flags": "0x1886",
+          "signature": "instance void (object, native int)"
+        }
+      ],
+      "status": "MATCH"
+    },
+    {
+      "token": "0xa000058",
+      "parent": "ModEvents+ModEventAbs`1<ModEvents+ModEventHandlerDelegate`1<ModEvents+SWorldShuttingDownData>>",
+      "lookup_type": "ModEvents+ModEventAbs`1",
+      "name": "RegisterHandler",
+      "signature": "instance void (!0)",
+      "kind": "method",
+      "matches": [
+        {
+          "token": "0x60037d1",
+          "rva": "0x16f40c",
+          "name": "RegisterHandler",
+          "flags": "0x86",
+          "signature": "instance void (!0)"
+        }
+      ],
+      "status": "MATCH"
+    }
+  ]
+}
