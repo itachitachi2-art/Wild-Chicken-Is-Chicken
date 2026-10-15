@@ -1,0 +1,4 @@
+System.MissingFieldException: Field not found: EntityAlive .ItemInventoryData.holdingEntity Due to: Could not find field in class
+  at Runner.Run () [0x00017] in <c662abc35be545da997bca5489980ddc>:0 
+  at Runner.Main (System.String[] args) [0x0001a] in <c662abc35be545da997bca5489980ddc>:0 
+EXPECTED_ABI_FAILURE_CONFIRMED

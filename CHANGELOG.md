@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.3-test1 (private v3.3 compatibility candidate)
+
+- Rebuild unchanged gameplay logic against supplied v3.3 runtime assemblies.
+- Emit current property accessors instead of stale field references.
+- Add candidate build identity and distinguish the startup log.
+- Pass static game API reference audit and isolated action/ABI regression checks.
+- In-game validation and reporter artifact confirmation remain pending.
+
+
 ## 0.1.2
 
 - Show a non-interactive two-second slaughter progress bar.

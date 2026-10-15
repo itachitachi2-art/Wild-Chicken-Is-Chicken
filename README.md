@@ -1,25 +1,42 @@
-# Wild Chicken Is Chicken v0.1.2
+# Current delivery: Wild Chicken Is Chicken v0.1.3-test1
 
-**Wild chickens are chickens. Catch it. Raise it. Or eat it.**
+2026-10-15: imported the already-delivered source, verification records and exact runtime ZIP. No rebuild or gameplay change was made during this sync. This is a test candidate; native gameplay remains unverified.
 
-A small mod for 7 Days to Die v3.2. Carry captured wild chickens to the coop as usual, or press and release the secondary action to obtain one Butchered Chicken and 23 feathers. A decorative two-second bar finishes, then the vanilla chicken death sound is requested before both rewards appear. The chicken is consumed on acceptance; movement and item switching do not cancel the presentation. Overflow feathers drop on the ground. If the original slot has been filled during the animation, the chicken uses the inventory or ground fallback.
+[Download the installable ZIP](dist/WildChickenIsChicken-v0.1.3-test1-v3.3-install.zip) · [Import identity](docs/SYNC-20261015.json)
 
-Butchered Chicken can be used in the existing chicken wings, ash chicken stew, and roadrunner chicken jerky recipes. It cannot be used in a coop. Wild chicken MoveSpeedPanic is adjusted from 1.5 to 1.2. Other hunting and coop production settings remain unchanged.
+The following is the delivered development documentation. Historical references describe their recorded stage.
 
-## Build and install
+---
 
-On Windows, run `build.cmd`, then copy the built `WildChickenIsChicken` folder to your Mods directory. Disable EAC. No .NET SDK is required: the build uses Windows Framework csc and the game-provided runtime assemblies.
+# Wild Chicken Is Chicken v0.1.3-test1 for 7 Days to Die v3.3
 
-Run `build-release.cmd` to generate `WildChickenIsChicken-v0.1.2-install.zip` containing the compiled mod DLL and runtime assets. Game runtime DLLs are never included.
+Private compatibility test build. This is not a published release and has not been tested inside the game.
+
+## What changed
+
+Rebuilt the v0.1.2 gameplay source against the supplied v3.3 game Managed assemblies. In these assemblies, ItemInventoryData.holdingEntity is a property rather than the field expected by an older binary. The rebuilt DLL calls get_holdingEntity. The compiled references for slotIdx, itemStack, ItemStack.count/itemValue, and ItemValue.type also use the current accessors.
+
+The slaughter action, two-second presentation, rewards, configuration, recipes, and artwork are unchanged. Changes to source are limited to build identity and the startup log. ModInfo reports 0.1.3; the startup log identifies v0.1.3-test1.
+
+This matches the reported MissingFieldException mechanism. The reporter's installed DLL and exact game build have not been inspected, so this is a candidate fix, not proof that every reported error came from this mod.
+
+## Install the test build
+
+1. Close the game. Back up the save and the existing WildChickenIsChicken mod folder.
+2. Replace the old WildChickenIsChicken folder with the folder of the same name in this ZIP. Do not keep two copies of the mod or mix old and new DLLs.
+3. Start 7 Days to Die v3.3 with EAC disabled.
+4. Confirm the log contains `[WildChickenIsChicken] v0.1.3-test1 loaded`.
+5. Test on a disposable save first: capture/carry a chicken, press and release secondary action, confirm the bar and sound then one butchered chicken plus 23 feathers. Check moving/switching items during the bar, full inventory fallback, coop placement, and save/reload.
+6. If the same error remains, retain the full log from startup through the error, exact game version, installed mod version/file, and other installed mods for diagnosis.
+
+To roll back, close the game and restore the previous mod folder and, if necessary, the backed-up test save. This package does not modify or install anything automatically.
+
+## Build from source
+
+The compiled DLL is already included. On Windows, `build.cmd "D:\SteamLibrary\steamapps\common\7 Days To Die"` rebuilds against that exact game's Managed assemblies using the Windows Framework C# compiler. Prefer an explicit v3.3 game path if several installations exist. `build-release.cmd` creates another install ZIP. Building against v3.2 will produce v3.2 field references again; do not redistribute such a DLL as the v3.3 candidate. The version label alone does not establish API compatibility.
+
+Game runtime DLLs and Harmony are not included. The mod uses the game's ItemAction extension point and installs no Harmony patches.
 
 ## Verification
 
-v0.1.2 compiled against the supplied game assemblies. Nine isolated feedback checks passed. The new bar, audio playback, and delayed rewards still require in-game verification. See `VALIDATION.md`.
-
-User gameplay testing confirmed capture, carrying, slaughter, cooking, feather collection, the custom icon, and continued coop production. Inventory-overflow feather drops have not been separately reported. Multiplayer, dedicated servers, and compatibility with other chicken mods remain unverified.
-
-Japanese item name: 絞めたニワトリ. English item name: Butchered Chicken. Both descriptions are provided.
-
-The reported “Meep! Meep!” message remains under observation; no related changes are included.
-
-See `WildChickenIsChicken/README.txt` for Japanese installation and gameplay instructions.
+See VALIDATION.md and Verification/ for the exact reference hashes, candidate DLL identity, metadata audit, source provenance, and isolated regression logs. No claim of in-game, multiplayer, dedicated-server, or cross-mod compatibility is made.

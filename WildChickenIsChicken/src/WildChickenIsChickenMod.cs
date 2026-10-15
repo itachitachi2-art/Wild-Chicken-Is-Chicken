@@ -3,7 +3,7 @@ public sealed class WildChickenIsChickenMod : IModApi
     public void InitMod(Mod mod)
     {
         ModEvents.WorldShuttingDown.RegisterHandler(OnWorldShuttingDown);
-        Log.Out("[WildChickenIsChicken] v0.1.2 loaded; decorative slaughter bar and chicken sound enabled.");
+        Log.Out("[WildChickenIsChicken] v0.1.3-test1 loaded; rebuilt for 7DTD v3.3 API (holdingEntity property); in-game validation pending.");
     }
 
     private static void OnWorldShuttingDown(ref ModEvents.SWorldShuttingDownData data)

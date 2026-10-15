@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-15",
+  "version": "Wild Chicken Is Chicken v0.1.3-test1",
+  "source_archive": "WildChickenIsChicken-v0.1.3-test1-v3.3-evidence.zip",
+  "source_archive_sha256": "bf3c2cc88ed7abd3b306fbf302e214d080584df5ffd6a605ac56304a70fb2e41",
+  "runtime_archive": "WildChickenIsChicken-v0.1.3-test1-v3.3-install.zip",
+  "runtime_archive_sha256": "21ab212cd16e0fa96dc70896b79dec16e42c0537d05b4d0a244806b7d5c9a82e",
+  "runtime_dll_sha256": "4f4016c9c158900a6189a245c197e0bdf7ae1746245413c4736e06f758f08061",
+  "sync_rebuilt": false,
+  "sync_game_executed": false,
+  "source_hashes_verified": 4,
+  "runtime_config_matches_delivered_source": true,
+  "notes": "Original verification files retain their historical scope; no new game validation is claimed. Runtime installation README may differ from source/evidence README."
+}

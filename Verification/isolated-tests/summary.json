@@ -1,0 +1,9 @@
+{
+  "game_executed": false,
+  "actual_action_source": "WildChickenIsChicken/src/ItemActionWCICButcherChicken.cs",
+  "old_field_api_checks": 11,
+  "new_property_api_checks": 11,
+  "stale_binary_holdingEntity_failure_reproduced": true,
+  "presentation_tested": false,
+  "fixture_is_not_the_game": true
+}

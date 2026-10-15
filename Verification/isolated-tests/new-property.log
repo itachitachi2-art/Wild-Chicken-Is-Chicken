@@ -1,0 +1,12 @@
+PASS: release without press does not consume
+PASS: press alone does not consume
+PASS: press-release accepts one chicken
+PASS: 23 feathers prepared
+PASS: one butchered chicken prepared
+PASS: repeated release does not duplicate
+PASS: StopHolding disarms pending press
+PASS: remote or non-primary player rejected
+PASS: unexpected stack count rejected
+PASS: dead player rejected
+PASS: missing UI rejected before consumption
+PASSED 11

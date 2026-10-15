@@ -6,7 +6,7 @@ $mod = Join-Path $here 'WildChickenIsChicken'
 $dll = Join-Path $mod 'WildChickenIsChicken.dll'
 if (-not (Test-Path -LiteralPath $dll)) { throw 'Compiled mod DLL is missing.' }
 $stage = Join-Path $here ('release-' + [guid]::NewGuid().ToString('N'))
-$output = Join-Path $here 'WildChickenIsChicken-v0.1.2-install.zip'
+$output = Join-Path $here 'WildChickenIsChicken-v0.1.3-test1-v3.3-install.zip'
 try {
     $target = Join-Path $stage 'WildChickenIsChicken'
     New-Item -ItemType Directory -Path $target -Force | Out-Null

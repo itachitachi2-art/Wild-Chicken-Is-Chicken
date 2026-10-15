@@ -1,0 +1,155 @@
+{
+  "base_commit": "285f589d186db58d8ff20e1bb2bf627c1825c73d",
+  "files": [
+    {
+      "path": ".gitignore",
+      "base_git_blob": "85a1fb520a156bb1311b848fe3f45eaa8a1451cf",
+      "candidate_git_blob": "85a1fb520a156bb1311b848fe3f45eaa8a1451cf",
+      "unchanged": true,
+      "sha256": "e41cccc0dc3942e21a29973f08e6c5fa83fa4cc438cc2d7c723269f5e5031a1f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "base_git_blob": "248a0b215a041d6c248ef7b0db2da62f3404ad80",
+      "candidate_git_blob": "35f69551f114597e5e09c62ac60c96150e92a9c1",
+      "unchanged": false,
+      "sha256": "d6160992616c2cfe4268e181aaf7c26e3657764ff995917147f12c5ba2fa535b"
+    },
+    {
+      "path": "README.md",
+      "base_git_blob": "401308617d69671908ee6c221fcaf671d625b686",
+      "candidate_git_blob": "a22e3ca9ce59c7192af83bfc5655515d5335096a",
+      "unchanged": false,
+      "sha256": "b8e82ac0d5a7c90fbdf5ea237c496164dcfa33b5fce9ee71c3e10e38be3b2bc2"
+    },
+    {
+      "path": "START-HERE.txt",
+      "base_git_blob": "e6333a53b6b1c5839533acf9fdf1fd6543ac42af",
+      "candidate_git_blob": "d3cbc5bdbcaabc8cbfa4a93805cb55c3a1aa7466",
+      "unchanged": false,
+      "sha256": "6d76fbe0361eaa3b08dab099ca4122878eb10ba522f6bc81de89484320e9aadf"
+    },
+    {
+      "path": "VALIDATION.md",
+      "base_git_blob": "0014bfc14b80605394f56c816d88ec1851f42cc2",
+      "candidate_git_blob": "8b6f88624acb5ea9881636f2ee0e432eca1a29ef",
+      "unchanged": false,
+      "sha256": "cdf252e95cab6c657c28b44668b2dd62be4c74eab5c707c7add1c653edd830e5"
+    },
+    {
+      "path": "WildChickenIsChicken/Config/Localization.csv",
+      "base_git_blob": "3377597ed967f7c24c93103e9538dd1f41896d38",
+      "candidate_git_blob": "3377597ed967f7c24c93103e9538dd1f41896d38",
+      "unchanged": true,
+      "sha256": "42bbf56bdf663f6992a36bfeeb71fdd95af61ce4f486c522d371a4fafdd80518"
+    },
+    {
+      "path": "WildChickenIsChicken/Config/entityclasses.xml",
+      "base_git_blob": "1297a1a433c1870fd2c1f386dfcd26ab728e5fdb",
+      "candidate_git_blob": "1297a1a433c1870fd2c1f386dfcd26ab728e5fdb",
+      "unchanged": true,
+      "sha256": "324246d2cae0ad3e28a0b83ad271518385e873a702f3a13ef1f6ec0353d2602a"
+    },
+    {
+      "path": "WildChickenIsChicken/Config/items.xml",
+      "base_git_blob": "4ad0cba67d7385461c0bd145cd4d6fd385bca3a5",
+      "candidate_git_blob": "4ad0cba67d7385461c0bd145cd4d6fd385bca3a5",
+      "unchanged": true,
+      "sha256": "e62d13b3a430cf4f306404c5596595447e687b79b367af4672f030cc03d16809"
+    },
+    {
+      "path": "WildChickenIsChicken/Config/recipes.xml",
+      "base_git_blob": "b966287cb0a85620547489f710d3d81d70263056",
+      "candidate_git_blob": "b966287cb0a85620547489f710d3d81d70263056",
+      "unchanged": true,
+      "sha256": "e60d890dc8768ccd5437d7844f63fc97aec60d5f30fb33054fe7876848b13b51"
+    },
+    {
+      "path": "WildChickenIsChicken/ItemIcons/wcicButcheredChicken.png",
+      "base_git_blob": "9e45b869778ff99272c62ffccaac2579fb422489",
+      "candidate_git_blob": "9e45b869778ff99272c62ffccaac2579fb422489",
+      "unchanged": true,
+      "sha256": "c6e9d018cc524995ba3de5661906b944202c1b484ba7900c4900503745fb31d4"
+    },
+    {
+      "path": "WildChickenIsChicken/ModInfo.xml",
+      "base_git_blob": "cd8370226d903a60a640a20328896d19db6c5f77",
+      "candidate_git_blob": "1da8727a40a968da9c651e737963a701f50c5db8",
+      "unchanged": false,
+      "sha256": "975ad01db0ec3c7e4af9ff31e6c35dbd0a517643b157f2f9b53768b134e35e1d"
+    },
+    {
+      "path": "WildChickenIsChicken/README.txt",
+      "base_git_blob": "09308e37eea283d1d95225d14c6b7753e4cce8e8",
+      "candidate_git_blob": "c89fd14cc6c253d8b199a25a6d7b5d54dd2a7964",
+      "unchanged": false,
+      "sha256": "643e8b48900354caa499f705b5dbc50687bf0b2b153f74bfb48adee34d5d0ab2"
+    },
+    {
+      "path": "WildChickenIsChicken/UIAtlases/ItemIconAtlas/wcicButcheredChicken.png",
+      "base_git_blob": "9e45b869778ff99272c62ffccaac2579fb422489",
+      "candidate_git_blob": "9e45b869778ff99272c62ffccaac2579fb422489",
+      "unchanged": true,
+      "sha256": "c6e9d018cc524995ba3de5661906b944202c1b484ba7900c4900503745fb31d4"
+    },
+    {
+      "path": "WildChickenIsChicken/build.cmd",
+      "base_git_blob": "2d5c8dd7d8a76ea094618e5109aa259862c20fbf",
+      "candidate_git_blob": "2d5c8dd7d8a76ea094618e5109aa259862c20fbf",
+      "unchanged": true,
+      "sha256": "5723a9f18c725aa510a0c188b261040242f0df5905aa7a9ae914b4a68d61d45b"
+    },
+    {
+      "path": "WildChickenIsChicken/build.ps1",
+      "base_git_blob": "9edea258697e4c3f7c4fc137ef18ea7430ca6df3",
+      "candidate_git_blob": "9edea258697e4c3f7c4fc137ef18ea7430ca6df3",
+      "unchanged": true,
+      "sha256": "4c8e86acb9e27c1ae76015a9ed30ab12dcbcd7d7e4334daf37816926005ceec7"
+    },
+    {
+      "path": "WildChickenIsChicken/src/ItemActionWCICButcherChicken.cs",
+      "base_git_blob": "67814ebf5ea8b077319426fb939e7214e15ee2af",
+      "candidate_git_blob": "67814ebf5ea8b077319426fb939e7214e15ee2af",
+      "unchanged": true,
+      "sha256": "0193720de3d0745c029f46d871eb99c5b14f1623f7d8fc34e79b82f1c30fc9d9"
+    },
+    {
+      "path": "WildChickenIsChicken/src/WCICButcherFeedback.cs",
+      "base_git_blob": "86c65f9a070d7b10c5b5d7cc6785b99227911f4e",
+      "candidate_git_blob": "86c65f9a070d7b10c5b5d7cc6785b99227911f4e",
+      "unchanged": true,
+      "sha256": "82b65aac7b1f4b842a706f712335b1ef5c1efae7329b738ffbe1a49160bc4579"
+    },
+    {
+      "path": "WildChickenIsChicken/src/WildChickenIsChickenMod.cs",
+      "base_git_blob": "ffff37348afbd895922a75055d5c48e8239a225c",
+      "candidate_git_blob": "f02af44a571dae898b67d6a2ff210e576cdad01d",
+      "unchanged": false,
+      "sha256": "2a4d6a2e21512268d33a744cc77a30d3a94538733f665653f28d7ee532b64602"
+    },
+    {
+      "path": "build-release.cmd",
+      "base_git_blob": "0977634187840caf847182f9ebbc1a6f59adfbbf",
+      "candidate_git_blob": "0977634187840caf847182f9ebbc1a6f59adfbbf",
+      "unchanged": true,
+      "sha256": "e4fec9e49fba98a04c21e61c018face73fa957b37b8e28d841d80dafd6c1ec90"
+    },
+    {
+      "path": "build-release.ps1",
+      "base_git_blob": "c2d4b56788754b3c34fa9945785c449aed8f1da1",
+      "candidate_git_blob": "1b90db89db632203344459dcaee94bf55d7c5cc6",
+      "unchanged": false,
+      "sha256": "9defbec4839e898ac750b48963f1b9c8c1e9f2e94fd9d50f16cbf4e8c2e27890"
+    },
+    {
+      "path": "build.cmd",
+      "base_git_blob": "2ecbe05514512f8bb55d06a814f9638b940dfdfc",
+      "candidate_git_blob": "2ecbe05514512f8bb55d06a814f9638b940dfdfc",
+      "unchanged": true,
+      "sha256": "1b92440734bcbee25a0c9c8d5327191a440116a63e77df3fa74f8b8b511e7c70"
+    }
+  ],
+  "new_files": [
+    "WildChickenIsChicken/src/AssemblyInfo.cs"
+  ]
+}
